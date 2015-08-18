@@ -1,0 +1,22 @@
+program demoVars;
+
+#include( "stdlib.hhf" )
+
+static
+  initDemo:         int32 := 5;
+  notInitialized:   int32;
+  boolTrue:         boolean := true;
+  boolFalse:        boolean;
+  charVar:          char := 'A';
+
+begin demoVars;
+
+    stdout.put("initDemo: ", initDemo, nl);
+    stdout.put("please enter a number ");
+    stdin.get(notInitialized);
+    stdout.put("notInitialized: ", notInitialized, nl)
+    stdout.put("boolTrue: ", boolTrue, nl);
+    stdout.put("boolFalse: ", boolFalse, nl);
+    stdout.put(charVar, nl);
+
+end demoVars;
